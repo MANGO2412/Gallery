@@ -1,0 +1,32 @@
+extends layout
+
+block content
+   nav(class="menu")
+    h1
+      a(href="/") Gallery
+    ul 
+     li
+      a(href="/") Home
+     li 
+      a(href="/collection") My collection
+    
+   div(class="img") 
+     form
+       input(id="look",type="search",value="",placeholder="type something..")
+       input(id="btn",type="submit",value="search")
+
+   div(class="container")
+    div(class="media") 
+  
+   //elemento padre
+   div(class="showImage hid")
+     div(class="card")
+       div(class="controls")
+         button guardar
+         button descargar
+         button(class="close") cerrar
+       header(id="title") Brown Rocks During Golden Hour
+       p(id="user") creado por Deden Dicky Ramdhani
+       img(class="picture",src="", alt="")
+
+   script(src="javascripts/api.js",type="module") 

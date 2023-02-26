@@ -1,0 +1,154 @@
+/* estilo principal */
+*{
+  padding: 0;
+  margin: 0;
+}
+
+/* estilo del menu */
+.menu{
+  background-color: #181823;
+  display: flex;
+  padding: 20px;
+  color: #E9F8F9;
+}
+
+.menu h1{
+  padding-right: 10px;
+  font-size: 50px;
+}
+ 
+
+.menu h1 a{
+   color: #E9F8F9;
+}
+
+
+.menu ul{
+  list-style: none;
+  display: flex;
+  align-items: self-end;
+}
+
+.menu ul li{
+  margin-right: 10px;
+  font-size: 25px;
+}
+
+.menu ul li a{
+  color: #E9F8F9;
+}
+.container{
+  width: 90%;
+  margin: auto;
+}
+
+/* clase media */
+.media{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  row-gap: 10px;
+  column-gap: 2px;
+}
+
+.photo{
+  object-fit: contain;
+}
+
+.img{
+  width: 100%;
+  height: 400px;
+  background-image: url('/images/fondo.jpg');
+  background-size: cover;
+  background-position: 2px;
+  margin-bottom: 10px;
+}
+
+.img form{
+  position: relative;
+  width: 400px;
+  height: 100px;
+  left: 30%;
+  top: 40%;
+}
+
+#look{
+  border: none;
+  padding: 10px 2px 10px;
+  width: 300px;
+}
+
+#btn{
+  padding: 10px;
+  background-color: #537FE7;
+  border: none;
+  color: #E9F8F9;
+}
+
+/* show image */
+.showImage{
+   background-color: #1818237d;
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   overflow: scroll;
+}
+
+.card{
+  width: 80%;
+  height: 100%;
+  padding: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #E9F8F9;
+}
+
+.controls{
+  width: 98%;
+  display: flex;
+  padding: 15px 0 15px;
+  justify-content: flex-end;
+}
+
+.controls > button{
+   background-color: #537FE7;
+   color: #E9F8F9;
+   padding: 10px;
+   border: none;
+   margin-right: 15px;
+}
+
+.card header{
+  font-size: 40px;
+  padding-left: 10px;
+}
+
+.card p{
+  padding-left: 10px;
+}
+
+.picture{
+  width: 80%;
+  height: 70%;
+  margin: 10px auto;
+}
+
+
+.hid{
+  display: none;
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
