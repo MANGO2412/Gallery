@@ -3,9 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www",
-    "build":"npm start",
-    "develop":"SET DEBUG=express-locallibrary-tutorial:* & npm start"
+    "start": "npm install & node ./bin/www",
+    "build":"SET DEBUG=express-locallibrary-tutorial:* & npm start"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
